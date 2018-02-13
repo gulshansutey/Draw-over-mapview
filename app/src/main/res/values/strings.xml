@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShapeOverMap</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="drag_to_draw_on_map">Drag to draw on map</string>
+</resources>

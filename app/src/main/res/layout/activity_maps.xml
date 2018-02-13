@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.technophile.shapeovermap.MapsActivity" >
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.technophile.shapeovermap.CustomFrame
+        android:layout_width="match_parent"
+        android:id="@+id/fl_clicker"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#ececec"
+            android:gravity="center"
+            android:id="@+id/tv_mesg"
+            android:visibility="gone"
+            android:text="@string/drag_to_draw_on_map"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="22dp"
+            android:tint="@color/colorTintAccent"
+            android:layout_marginRight="22dp"
+            android:clickable="true"
+            android:focusable="true"
+            map:srcCompat="@drawable/ic_touch_app_white_24dp" />
+    </com.technophile.shapeovermap.CustomFrame>
+
+
+
+</RelativeLayout>
